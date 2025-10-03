@@ -1,0 +1,64 @@
+/* Aqui estamos mexendo no corpo da página inteira (o "body") */
+body {
+    font-family: sans-serif;          /* Define a letra usada no site (mais limpa e moderna) */
+    background-color: #F4F4F4;        /* Pinta o fundo da página de cinza clarinho */
+    margin: 0;                        /* Remove a margem padrão da página (espaço nas bordas) */
+    padding: 0;                       /* Remove o "acolchoado" interno da página */
+    display: flex;                    /* Ativa o "flexbox", um jeito de organizar as coisas na tela */
+    justify-content: center;          /* Coloca o conteúdo no meio (horizontalmente) */
+    align-items: center;              /* Coloca o conteúdo no meio (verticalmente) */
+    height: 100vh;                    /* Faz a página ocupar 100% da altura da tela */
+}
+
+/* Estilo da caixinha branca que segura a lista (a div com classe "container") */
+.container {
+    background-color: #FFFFFF;        /* Fundo branco */
+    padding: 20px;                    /* Espaço interno de 20px (dá respiro pros elementos dentro) */
+    border-radius: 5px;               /* Arredonda levemente os cantos da caixa */
+    width: 400px;                     /* Define a largura da caixa (400px) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Faz uma sombra leve embaixo da caixa */
+}
+
+/* O título (Lista de Tarefas) */
+h1 {
+    text-align: center;               /* Coloca o texto no meio */
+}
+
+/* A área que junta a caixinha de digitar e o botão */
+.input-container {
+    display: flex;                    /* Coloca os itens (input e botão) lado a lado */
+    margin-bottom: 20px;              /* Espaço de 20px embaixo */
+}
+
+/* A caixinha onde a pessoa digita a tarefa */
+#task-input {
+    flex: 1;                          /* Faz o input ocupar todo o espaço possível */
+    padding: 10px;                    /* Deixa espaço dentro da caixinha pra não colar o texto na borda */
+    border: 1px solid #DDDDDD;        /* Bordas cinza clarinhas */
+    border-radius: 4px;               /* Bordas arredondadas */
+}
+
+/* O botão de adicionar tarefa */
+#add-task-btn {
+    padding: 10px;                    /* Dá um "acolchoado" dentro do botão */
+    border: none;                     /* Remove a borda padrão feia do botão */
+    background-color: green;          /* Cor de fundo verde */
+    color: #FFFFFF;                   /* Letras brancas */
+    border-radius: 3px;               /* Bordas arredondadas */
+    cursor: pointer;                  /* Muda o mouse pra "mãozinha" quando passa por cima */
+    margin-left: 10px;                /* Espaço de 10px entre o botão e a caixinha de digitar */
+}
+
+/* A lista de tarefas (o <ul>) */
+ul {
+    list-style: none;                 /* Remove as bolinhas padrão da lista */
+    padding: 0;                       /* Remove espaço extra em volta */
+}
+
+/* Cada item da lista (o <li>) */
+li {
+    background-color: #EEEEEE;        /* Fundo cinza claro */
+    padding: 10px;                    /* Espaço dentro do quadradinho da tarefa */
+    margin-bottom: 5px;               /* Espaço de 5px entre uma tarefa e outra */
+    border-radius: 3px;               /* Bordas levemente arredondadas */
+}
