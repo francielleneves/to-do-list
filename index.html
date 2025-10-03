@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5, importante para o navegador interpretar corretamente o código -->
+
+<html>
+<!-- Tag raiz que envolve todo o conteúdo da página -->
+
+<head>
+    <!-- Cabeçalho da página (não aparece visualmente para o usuário, mas contém informações importantes) -->
+
+    <title>Lista de Tarefas</title>
+    <!-- Título da aba do navegador -->
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Importa o arquivo CSS externo (style.css) para aplicar estilos à página -->
+</head>
+
+<body>
+    <!-- Corpo da página, onde ficam os elementos visíveis para o usuário -->
+
+    <div class="container">
+        <!-- Div com classe "container", geralmente usada para organizar e centralizar o conteúdo -->
+
+        <h1>Lista de Tarefas</h1>
+        <!-- Título principal da página -->
+
+        <div class="input-container">
+            <!-- Div que agrupa o campo de texto e o botão -->
+
+            <input type="text" id="task-input" placeholder="Digite uma nova tarefa..." />
+            <!-- Campo de texto onde o usuário digita a nova tarefa
+                 - type="text" → define que é um campo de texto
+                 - id="task-input" → identificador único, usado no JavaScript
+                 - placeholder → texto de dica dentro do campo -->
+
+            <button id="add-task-btn">Adicionar</button>
+            <!-- Botão que o usuário clica para adicionar a tarefa
+                 - id="add-task-btn" → identificador usado pelo JavaScript -->
+        </div>
+
+        <ul id="task-list"></ul>
+        <!-- Lista não ordenada (ul = unordered list)
+             - id="task-list" → local onde as tarefas digitadas serão exibidas dinamicamente -->
+    </div> 
+</body>
+
+<script src="script.js"></script>
+<!-- Importa o arquivo JavaScript (script.js), que será responsável pela lógica da lista (adicionar, remover, etc.) -->
+
+</html>
